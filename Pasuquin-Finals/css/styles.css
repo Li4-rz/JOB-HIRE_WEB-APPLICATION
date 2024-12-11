@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Header */
+header {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Register Form Styles */
+.register-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.register-container .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container .form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.register-container .form-group input,
+.register-container .form-group select,
+.register-container .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.register-container .form-group input[type="password"] {
+    width: 100%;
+}
+
+.register-container .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.register-container .form-group select {
+    background-color: #fff;
+}
+
+.register-container .form-group button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container .form-group button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Display error and success messages */
+.success-message,
+.error-message {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #28a745;
+    color: white;
+}
+
+.error-message {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Toggle visibility of fields based on selected role */
+#applicant-fields, #employer-fields {
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .register-container {
+        padding: 1rem;
+    }
+
+    .register-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .register-container form {
+        gap: 0.8rem;
+    }
+
+    .register-container .form-group input,
+    .register-container .form-group select,
+    .register-container .form-group textarea {
+        padding: 0.6rem;
+    }
+
+    .register-container .form-group button {
+        padding: 0.6rem 1rem;
+    }
+}
